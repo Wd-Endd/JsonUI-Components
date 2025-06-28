@@ -1,0 +1,15 @@
+# Node
+node_modules
+.npmignore
+jsonui-components-v*.tgz
+
+# TypeScript
+src
+tsconfig.json
+
+# Yarn
+yarn.lock
+
+# Git
+README.md
+.gitignore
