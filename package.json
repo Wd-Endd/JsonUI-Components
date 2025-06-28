@@ -1,17 +1,19 @@
 {
   "name": "jsonui-components",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Template Components for JsonUI Scripting.",
   "main": "dist/cjs/index.js",
   "repository": "https://github.com/Wd-Endd/JsonUI-Components.git",
   "author": "W. Dev Endd",
   "license": "MIT",
   "dependencies": {
-    "jsonui-scripting": "^3.0.0",
-    "tsc": "^2.0.4",
-    "typescript": "^5.8.3"
+    "jsonui-scripting": "^3.0.0"
   },
   "scripts": {
     "build": "tsc && yarn pack"
+  },
+  "devDependencies": {
+    "tsc": "^2.0.4",
+    "typescript": "^5.8.3"
   }
 }
