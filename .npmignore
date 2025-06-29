@@ -1,5 +1,5 @@
 # Node
-node_modules
+node_modules/
 .npmignore
 jsonui-components-v*.tgz
 
@@ -11,5 +11,4 @@ tsconfig.json
 yarn.lock
 
 # Git
-README.md
 .gitignore
