@@ -96,7 +96,7 @@ export function buttonTemplate(props: ButtonComponent = {}) {
         "$is_pressed|default": false,
         "$is_locked|default": false,
         ...props.properties,
-    }).addChild<Types.Panel>(
+    }).addChild<UI<Types.Panel>>(
         UI.panel({
             "$is_default": true,
             "$button_content|default": Vanilla.common.emptyPanel().getPath(),
@@ -110,7 +110,7 @@ export function buttonTemplate(props: ButtonComponent = {}) {
         ).addChild("$button_content", {
             layer: 1,
         }).addChild("$hover_content"),
-    {}, "default").addChild<Types.Panel>(
+    {}, "default").addChild<UI<Types.Panel>>(
 
         UI.panel({
             "$is_hover": true,
@@ -125,7 +125,7 @@ export function buttonTemplate(props: ButtonComponent = {}) {
         ).addChild("$button_content", {
             layer: 1,
         }).addChild("$hover_content"),
-    {}, "hover").addChild<Types.Panel>(
+    {}, "hover").addChild<UI<Types.Panel>>(
 
         UI.panel({
             "$is_pressed": true,
@@ -140,8 +140,7 @@ export function buttonTemplate(props: ButtonComponent = {}) {
         ).addChild("$button_content", {
             layer: 1,
         }).addChild("$hover_content"),
-    {}, "pressed").addChild<Types.Panel>(
-
+    {}, "pressed").addChild<UI<Types.Panel>>(
         UI.panel({
             "$is_locked": true,
             "$button_content|default": Vanilla.common.emptyPanel().getPath(),
@@ -155,5 +154,5 @@ export function buttonTemplate(props: ButtonComponent = {}) {
         ).addChild("$button_content", {
             layer: 1,
         }).addChild("$hover_content"),
-    {}, "locked")
+    {}, "locked"));
 }
